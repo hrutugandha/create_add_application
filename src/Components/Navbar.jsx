@@ -28,7 +28,6 @@ const Navbar = () => {
 
 const DashboardDiv = styled.div`
 text-decoration: none;
-     border: 1px solid red;
      flex:1;
      padding-top: 20px;
 `
@@ -36,7 +35,6 @@ text-decoration: none;
 const CreateAddDiv = styled.div`
 text-decoration: none;
      style: none;
-     border: 1px solid red;
      flex:1;
      underline: none;
      padding-top: 20px;
@@ -44,9 +42,9 @@ text-decoration: none;
 
 const NavWrapper = styled.div`
    height: 80px;
-   border: 1px solid red;
    display: flex;
    position: relative;
+   border: 2px solid black;
 
 
    @media (max-width: 768px) {
@@ -79,7 +77,6 @@ const NavWrapper = styled.div`
 
 const LogoWrapper = styled.div`
    flex: 2;
-   border: 1px solid red;
    justify-content: left;
    text-align: left;
    font-weight: bold;
@@ -91,7 +88,6 @@ const LogoWrapper = styled.div`
 
 const LinksWrapper = styled.div`
    flex : 1;
-   border: 1px solid red;
    display: flex;
 
 `

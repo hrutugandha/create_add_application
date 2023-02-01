@@ -6,7 +6,7 @@ import Homepage from '../Pages/Homepage'
 
 const Navbar = () => {
   return (
-    <NavWrapper>
+    <NavWrapper className='nav'>
       <LogoWrapper className='logo-container'>
         APP LOGO
       </LogoWrapper>
@@ -51,7 +51,13 @@ const NavWrapper = styled.div`
 
    @media (max-width: 768px) {
     flex-direction: column;
-    max-height: 80px;
+    height: 80px;
+
+    .nav{
+      padding: 40px;
+    }
+
+
 
     
 

@@ -37,7 +37,7 @@ const reactDonutChartOnMouseEnter = (item) => {
 
 const DoughnutChart = () => {
   return (
-    <div className="App" style={{flex:"1"}}>
+    <div className="App" style={{flex:"1",padding: "40px"}}>
       <DonutChart
         width={500}
         onMouseEnter={(item) => reactDonutChartOnMouseEnter(item)}

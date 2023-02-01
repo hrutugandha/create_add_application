@@ -16,6 +16,11 @@ const Wrapper = styled.div`
     height: 100vh;
     display:flex;
     background-color: #FFF3F0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 40px;
+
 `
 
 

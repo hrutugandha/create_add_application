@@ -8,13 +8,11 @@ import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider>
-      <Suspense fallback={<div></div>}>
+      <Suspense fallback={<div>Page Not Fount</div>}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
     </Suspense>
-  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

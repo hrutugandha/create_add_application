@@ -1,0 +1,53 @@
+{
+    "adInsights":[
+        {
+            "Campaign": "Cosmetics",
+            "Clicks":"72",
+            "Cost": "USD 4,272",
+            "Conversation":"8",
+            "Revenue":"USD 16,568"
+        },
+        {
+            "Campaign": "Serums",
+            "Clicks":"3961",
+            "Cost": "USD 27,331",
+            "Conversation":"115",
+            "Revenue":"USD 1363,56"
+        },
+        {
+            "Campaign": "Facewashes",
+            "Clicks":"9462",
+            "Cost": "USD 76,831",
+            "Conversation":"123",
+            "Revenue":"USD 266,800"
+        },
+        {
+            "Campaign": "Shampoos",
+            "Clicks":"439",
+            "Cost": "USD 2,151",
+            "Conversation":"5",
+            "Revenue":"USD 11,029"
+        },
+        {
+            "Campaign": "Conditioners",
+            "Clicks":"1680",
+            "Cost": "USD 3,864",
+            "Conversation":"49",
+            "Revenue":"USD 175,245"
+        },
+        {
+            "Campaign": "Hair Oils",
+            "Clicks":"4978",
+            "Cost": "USD 29,370",
+            "Conversation":"189",
+            "Revenue":"USD 623,106"
+        },
+        {
+            "Campaign": "Total",
+            "Clicks":"26,510",
+            "Cost": "USD 143,819",
+            "Conversation":"489",
+            "Revenue":"USD 15,73,563"
+        }
+    ]
+}

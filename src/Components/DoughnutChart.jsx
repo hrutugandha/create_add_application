@@ -1,40 +1,56 @@
-import { Doughnut } from "react-chartjs-2";
+import DonutChart from "react-donut-chart";
 
-function DoughnutChart() {
+const reactDonutChartdata = [
+  {
+    label: "Male",
+    value: 40,
+    color: "#FF823C"
+  },
+  {
+    label: "Female",
+    value: 35,
+    color: "#0096FF"
+  },
+  {
+    label: "Unknown",
+    value: 25,
+    color: "#323c46"
+  }
+];
+const reactDonutChartBackgroundColor = [
+  "#FF823C",
+  "#323C46",
+  "#0096FF",
+];
+const reactDonutChartInnerRadius = 0.5;
+const reactDonutChartSelectedOffset = 0.04;
+const reactDonutChartHandleClick = (item, toggled) => {
+  if (toggled) {
+    console.log(item);
+  }
+};
+let reactDonutChartStrokeColor = "#FFFFFF";
+const reactDonutChartOnMouseEnter = (item) => {
+  let color = reactDonutChartdata.find((q) => q.label === item.label).color;
+  reactDonutChartStrokeColor = color;
+};
 
- const data = {}
-
- const options = {}
-
- const plugins = [{
-     beforeDraw: function(chart) {
-      var width = chart.width,
-          height = chart.height,
-          ctx = chart.ctx;
-          ctx.restore();
-          var fontSize = (height / 160).toFixed(2);
-          ctx.font = fontSize + "em sans-serif";
-          ctx.textBaseline = "top";
-          var text = "Foo-bar",
-          textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textY = height / 2;
-          ctx.fillText(text, textX, textY);
-          ctx.save();
-     } 
-   }]
-
-
-
+const DoughnutChart = () => {
   return (
-   
-        <Doughnut 
-          type="doughnut" 
-          data={data} 
-          options{...options} 
-          plugins={plugins} 
-         />
+    <div className="App" style={{flex:"1"}}>
+      <DonutChart
+        width={500}
+        onMouseEnter={(item) => reactDonutChartOnMouseEnter(item)}
+        strokeColor={reactDonutChartStrokeColor}
+        data={reactDonutChartdata}
+        colors={reactDonutChartBackgroundColor}
+        innerRadius={reactDonutChartInnerRadius}
+        selectedOffset={reactDonutChartSelectedOffset}
+        onClick={(item, toggled) => reactDonutChartHandleClick(item, toggled)}
+      />
+    </div>
   );
 }
 
-export default DoughnutChart;
 
+export default DoughnutChart;
